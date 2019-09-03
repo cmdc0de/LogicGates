@@ -188,7 +188,7 @@
 <wire x1="36" y1="0" x2="36" y2="30" width="0" layer="20"/>
 <wire x1="36" y1="30" x2="0" y2="30" width="0" layer="20"/>
 <wire x1="0" y1="30" x2="0" y2="0" width="0" layer="20"/>
-<text x="1.27" y="20" size="1.016" layer="1" font="vector">INPUT A</text>
+<text x="1.27" y="20" size="1.016" layer="1" font="vector" ratio="10">INPUT A</text>
 <text x="29.21" y="20" size="1.016" layer="1" font="vector">INPUT B</text>
 <text x="28.829" y="3.81" size="1.016" layer="1" font="vector">OUTPUT C</text>
 </plain>
