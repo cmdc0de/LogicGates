@@ -188,12 +188,6 @@
 <wire x1="36" y1="0" x2="36" y2="30" width="0" layer="20"/>
 <wire x1="36" y1="30" x2="0" y2="30" width="0" layer="20"/>
 <wire x1="0" y1="30" x2="0" y2="0" width="0" layer="20"/>
-<text x="11.43" y="20" size="1.016" layer="1" font="vector" ratio="16" distance="70">         NAND
-A          B          C
-0          0          1
-0          1          1
-1          0          1
-1          1          0</text>
 <text x="1.27" y="20" size="1.016" layer="1" font="vector">INPUT A</text>
 <text x="29.21" y="20" size="1.016" layer="1" font="vector">INPUT B</text>
 <text x="28.829" y="3.81" size="1.016" layer="1" font="vector">OUTPUT C</text>
@@ -564,6 +558,18 @@ chip</description>
 </package>
 </packages>
 </library>
+<library name="logic-gates">
+<packages>
+<package name="NAND_TRUTH_TABLE">
+<text x="0" y="0" size="1.016" layer="1" ratio="15" distance="70">         NAND
+A          B          C
+0          0          1
+0          1          1
+1          0          1
+1          1          0</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -820,6 +826,7 @@ chip</description>
 <attribute name="VALUE" x="-0.635" y="6.35" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U$1" library="logos" package="CMD_C0DE_LOGO_TOP_COPPER" value="CMD_C0DE_LOGOCMD_CODE_LOGO_TOP_COPPER" x="31.115" y="26.289" smashed="yes"/>
+<element name="U$2" library="logic-gates" package="NAND_TRUTH_TABLE" value="NAND_TRUTH_TABLE" x="11.684" y="19.812" smashed="yes"/>
 </elements>
 <signals>
 <signal name="VDD">

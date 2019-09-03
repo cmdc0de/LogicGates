@@ -4977,6 +4977,42 @@ part number 2062-2P from STA</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="logic-gates">
+<packages>
+<package name="NAND_TRUTH_TABLE">
+<text x="0" y="0" size="1.016" layer="1" ratio="15" distance="70">         NAND
+A          B          C
+0          0          1
+0          1          1
+1          0          1
+1          1          0</text>
+</package>
+</packages>
+<symbols>
+<symbol name="NAND_TRUTH_TABLE">
+<text x="-10.16" y="0" size="1.778" layer="94">         NAND
+A          B          C
+0          0          1
+0          1          1
+1          0          1
+1          1          0</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NAND_TRUTH_TABLE">
+<gates>
+<gate name="G$1" symbol="NAND_TRUTH_TABLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NAND_TRUTH_TABLE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5001,6 +5037,7 @@ part number 2062-2P from STA</description>
 <part name="C2" library="passives" deviceset="C-US" device="C1206" value="1 uF"/>
 <part name="J1" library="connector" deviceset="M02" device="1X02_NO_SILK"/>
 <part name="U$1" library="logos" deviceset="CMD_C0DE_LOGO" device="CMD_CODE_LOGO_TOP_COPPER"/>
+<part name="U$2" library="logic-gates" deviceset="NAND_TRUTH_TABLE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5059,6 +5096,7 @@ part number 2062-2P from STA</description>
 <attribute name="NAME" x="-27.94" y="104.902" size="1.778" layer="95"/>
 </instance>
 <instance part="U$1" gate="G$1" x="88.9" y="55.88" smashed="yes"/>
+<instance part="U$2" gate="G$1" x="-17.78" y="40.64" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -5205,4 +5243,10 @@ part number 2062-2P from STA</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
